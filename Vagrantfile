@@ -9,7 +9,8 @@ Vagrant.configure("2") do |config|
     chef.cookbooks_path = "cookbooks"
     
     chef.add_recipe "apt"
-  
+    chef.add_recipe "docker"
+      
     chef.json = {
       # override attributes
     }
